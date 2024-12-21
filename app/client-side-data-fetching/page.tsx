@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import GoBackBtn from '@/components/GoBackBtn'
 import Image from 'next/image';
 import { Star } from 'lucide-react';
-import { BarLoader } from 'react-spinners';
+import { BarLoader, HashLoader } from 'react-spinners';
 
 interface Product {
   id: number;
@@ -45,7 +45,7 @@ function ClientPage() {
 
       {loading ? (
         <div className="flex justify-center items-center min-h-[50vh]">
-          <BarLoader color="#4F46E5" loading={loading} height={4} width={150} />
+          <HashLoader color="#1F2937" loading={loading} size={60} />
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
