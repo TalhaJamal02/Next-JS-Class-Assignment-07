@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import GoBackBtn from '@/components/GoBackBtn'
 import Image from 'next/image';
 import { Star } from 'lucide-react';
-import { BarLoader, HashLoader } from 'react-spinners';
+import { HashLoader } from 'react-spinners';
 
 interface Product {
   id: number;
